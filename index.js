@@ -55,3 +55,27 @@
 // fs.rename(filePath,`${dirPath}/fruit.txt`,(err)=>{
 //     if(!err) console.log("file name is updated");
 // })
+
+//synchronous and asyncronous programming Node js is asyncronous
+
+// console.log("start exe...");
+// setTimeout(()=>{
+//     console.log("logic exe...");
+// },60000)
+// console.log("complete exe...");
+
+// disadvatage of sync
+
+let a = 10;
+let b = 0;
+
+let wait = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    console.log("logic exe...");
+    b = 20;
+    resolve(30);
+  }, 2000);
+});
+wait.then((data) => {
+  console.log(a + data);
+});
