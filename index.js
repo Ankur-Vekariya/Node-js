@@ -24,15 +24,34 @@
 
 // file system , path &
 
-const fs = require("fs");
-const path = require("path");
-const dirPath = path.join(__dirname);
+// const fs = require("fs");
+// const path = require("path");
+// const dirPath = path.join(__dirname);
 // console.log(dirPath);
 // for(i=0;i,i<5;i++){
 //   fs.writeFileSync(dirPath+"/hello"+i+".txt","a simple file");
 // }
-fs.readdir(dirPath, (err, file) => {
-  file.forEach((item) => {
-    console.log("file name is",item);
-  });
-});
+// fs.readdir(dirPath, (err, file) => {
+//   file.forEach((item) => {
+//     console.log("file name is",item);
+//   });
+// });
+
+// CRUD with file system
+
+// const fs = require('fs');
+// const path = require('path');
+// const dirPath = path.join(__dirname,'crud');
+// const filePath = `${dirPath}/apple.txt`;
+// fs.writeFileSync('apple.txt','this is a simple txt file');
+// fs.readFile(filePath,(err,item)=>{
+//     console.log(item);
+// })
+// fs.appendFile(filePath,'and file name is apple.txt',(err)=>{
+//     if(!err) console.log(
+//         "file is updated"
+//     );
+// })
+// fs.rename(filePath,`${dirPath}/fruit.txt`,(err)=>{
+//     if(!err) console.log("file name is updated");
+// })
