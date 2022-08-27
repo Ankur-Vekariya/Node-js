@@ -156,3 +156,22 @@
 // app.use(express.static(publicPath));
 
 // app.listen(5000);
+
+// 404 page and remove exxtension from url
+
+// const express = require("express");
+// const path = require("path");
+
+// const app = express();
+// const publicPath = path.join(__dirname, "public");
+// console.log(publicPath);
+
+// app.get('/about',(req,res)=>{
+//     res.sendFile(`${publicPath}/about.html`)
+// })
+// app.get('*',(req,res)=>{
+//     res.sendFile(`${publicPath}/help.html`)
+// })
+
+
+app.listen(5000);
