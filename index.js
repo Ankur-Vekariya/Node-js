@@ -66,16 +66,16 @@
 
 // disadvatage of sync
 
-let a = 10;
-let b = 0;
+// let a = 10;
+// let b = 0;
 
-let wait = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    console.log("logic exe...");
-    b = 20;
-    resolve(30);
-  }, 2000);
-});
-wait.then((data) => {
-  console.log(a + data);
-});
+// let wait = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     console.log("logic exe...");
+//     b = 20;
+//     resolve(30);
+//   }, 2000);
+// });
+// wait.then((data) => {
+//   console.log(a + data);
+// });
