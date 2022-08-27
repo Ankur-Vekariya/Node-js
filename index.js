@@ -86,14 +86,14 @@
 // Node api 
 // callback queue
 
-console.log("starting exe...");
+// console.log("starting exe...");
 
-setTimeout(() => {
-  console.log("2 second log");
-}, 2000);
+// setTimeout(() => {
+//   console.log("2 second log");
+// }, 2000);
 
-setTimeout(() => {
-  console.log("0 second log");
-}, 0);
+// setTimeout(() => {
+//   console.log("0 second log");
+// }, 0);
 
-console.log("finishing exe....");
+// console.log("finishing exe....");
