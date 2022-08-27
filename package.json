@@ -1,0 +1,22 @@
+{
+  "name": "first",
+  "version": "1.0.0",
+  "description": "a first nod",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/Ankur-Vekariya//Node-js.git)"
+  },
+  "keywords": [
+    "first"
+  ],
+  "author": "ankur vekariya",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "simple-node-logger": "^21.8.12"
+  }
+}
