@@ -80,10 +80,10 @@
 //   console.log(a + data);
 // });
 
-//  How node js works 
+//  How node js works
 // event loop
 // call stack
-// Node api 
+// Node api
 // callback queue
 
 // console.log("starting exe...");
@@ -98,13 +98,13 @@
 
 // console.log("finishing exe....");
 
-
 // express js
 
 // const express = require('express');
 // const app = express();
 
 // app.get('',(req,res)=>{
+//     console.log("data sent by browser",req.query);
 //     res.send("Welcome,this is home page")
 // })
 
@@ -114,18 +114,33 @@
 
 // app.listen(5000);
 
+// Render HTML and JSON data
 
+// const express = require("express");
+// const app = express();
 
+// app.get("", (req, res) => {
+//   console.log("data sent by browser", req.query);
+//   res.send([
+//     {
+//       name: "ankur",
+//       email: "ankur@gmail.com",
+//     },
+//     {
+//       name: "ankur",
+//       email: "ankur@gmail.com",
+//     },
+//         {
+//       name: "ankur",
+//       email: "ankur@gmail.com",
+//     },
+//   ]);
+// });
 
+// app.get("/about", (req, res) => {
+//   res.send(`
+//     <input type=""></input>
+//     `);
+// });
 
-
-
-
-
-
-
-
-
-
-
-
+// app.listen(5000);
