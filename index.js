@@ -173,5 +173,27 @@
 //     res.sendFile(`${publicPath}/help.html`)
 // })
 
+// app.listen(5000);
+
+// templete Engine
+
+// const express = require("express");
+// const path = require("path");
+
+// const app = express();
+// const publicPath = path.join(__dirname, "public");
+// console.log(publicPath);
+
+// app.set("view engine", "ejs");
+// app.get("/profile", (req, res) => {
+//   const user = {
+//     name: "ankur",
+//     email: "ankur@gmail.com",
+//   };
+//   res.render("profile", { user });
+// });
+// app.get("*", (req, res) => {
+//   res.sendFile(`${publicPath}/help.html`);
+// });
 
 // app.listen(5000);
