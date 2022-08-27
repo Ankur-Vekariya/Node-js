@@ -197,3 +197,30 @@
 // });
 
 // app.listen(5000);
+
+// Dynamic pages
+
+// const express = require("express");
+// const path = require("path");
+
+// const app = express();
+// const publicPath = path.join(__dirname, "public");
+// console.log(publicPath);
+
+// app.set("view engine", "ejs");
+// app.get("/profile", (req, res) => {
+//   const user = {
+//     name: "ankur",
+//     email: "ankur@gmail.com",
+//     skills: ["sql", "php", "js"],
+//   };
+//   res.render("profile", { user });
+// });
+// app.get("/login", (req, res) => {
+//   res.render("login");
+// });
+// app.get("*", (req, res) => {
+//   res.sendFile(`${publicPath}/help.html`);
+// });
+
+// app.listen(5000);
