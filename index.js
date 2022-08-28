@@ -337,3 +337,10 @@
 // app.use('/',route)
 
 // app.listen(5000);
+
+// use of database mongoDb
+
+// mongoDB is a NoSQL database'
+// the data stored in collection
+// Collection dont have row and columns
+// data is stored in the form of objects
