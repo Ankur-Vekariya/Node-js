@@ -8,7 +8,7 @@
 //   res.end();
 // }).listen(5000);
 
-// input from cmd and creatin file with content
+// input from cmd and creation of file with content
 
 // const fs = require('fs');
 
@@ -145,7 +145,7 @@
 
 // app.listen(5000);
 
-// Render sepraate HTML file
+// Render seprate HTML file
 
 // const express = require("express");
 // const path = require("path");
@@ -221,6 +221,39 @@
 // });
 // app.get("*", (req, res) => {
 //   res.sendFile(`${publicPath}/help.html`);
+// });
+
+// app.listen(5000);
+
+//use of middleware(basic authentication)
+// middleware types
+// application level middleware
+// Router level middleware
+// Error handling middleware
+// Built in middleware
+// Third party middleware
+
+// const express = require("express");
+// const app = express();
+
+// const reqFilter = (req, res, next) => {
+//   if (!req.query.age) {
+//     res.send("pls provide age");
+//   } else if (req.query.age < 18) {
+//     res.send("you can not acces this page");
+//   } else {
+//     next();
+//   }
+// };
+
+// app.use(reqFilter);
+
+// app.get("/", (req, res) => {
+//   res.send("welcome to home page");
+// });
+
+// app.get("/users", (req, res) => {
+//   res.send("welcome to users page");
 // });
 
 // app.listen(5000);
