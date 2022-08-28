@@ -233,6 +233,8 @@
 // Built in middleware
 // Third party middleware
 
+// application level middleware example
+
 // const express = require("express");
 // const app = express();
 
@@ -255,5 +257,83 @@
 // app.get("/users", (req, res) => {
 //   res.send("welcome to users page");
 // });
+
+// app.listen(5000);
+
+// Route level middleware
+
+// const express = require("express");
+// const app = express();
+
+// const reqFilter = (req, res, next) => {
+//   if (!req.query.age) {
+//     res.send("pls provide age");
+//   } else if (req.query.age < 18) {
+//     res.send("you can not acces this page");
+//   } else {
+//     next();
+//   }
+// };
+
+// app.get("/", (req, res) => {
+//   res.send("welcome to home page");
+// });
+
+// app.get("/users",reqFilter, (req, res) => {
+//   res.send("welcome to users page");
+// });
+
+// app.get("/about", (req, res) => {
+//     res.send("welcome to about page");
+//   });
+
+// app.listen(5000);
+
+// middleware in separate file
+
+// const express = require("express");
+// const app = express();
+// const reqFilter = require('./middleware')
+
+// app.get("/", (req, res) => {
+//   res.send("welcome to home page");
+// });
+
+// app.get("/users",reqFilter, (req, res) => {
+//   res.send("welcome to users page");
+// });
+
+// app.get("/about", (req, res) => {
+//     res.send("welcome to about page");
+//   });
+
+// app.listen(5000);
+
+// apply middleware to group of routes
+
+// const express = require("express");
+// const app = express();
+// const reqFilter = require("./middleware");
+// const route = express.Router();
+
+// route.use(reqFilter);
+
+// app.get("/", (req, res) => {
+//   res.send("welcome to home page");
+// });
+
+// app.get("/users", (req, res) => {
+//   res.send("welcome to users page");
+// });
+
+// route.get("/about", (req, res) => {
+//   res.send("welcome to about page");
+// });
+
+// route.get("/contact", (req, res) => {
+//   res.send("welcome to contact page");
+// });
+
+// app.use('/',route)
 
 // app.listen(5000);
