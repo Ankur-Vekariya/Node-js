@@ -344,3 +344,31 @@
 // the data stored in collection
 // Collection dont have row and columns
 // data is stored in the form of objects
+
+
+// connection with database(MongoDB)
+// Getting data from database
+
+// const {MongoClient} = require('mongodb');
+// const url = 'mongodb://localhost:27017';
+// const client = new MongoClient(url);
+
+// async function getData(){
+//     let result = await client.connect();
+//     let db = result.db('e-comm');
+//     let collection = db.collection('product');
+//     let res = await collection.find({}).toArray();
+//     console.log(res);
+// }
+
+// getData()
+
+
+
+
+
+
+
+
+
+
