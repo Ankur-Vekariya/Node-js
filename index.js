@@ -348,6 +348,7 @@
 
 // connection with database(MongoDB)
 // Getting data from database
+// lengthy process
 
 // const {MongoClient} = require('mongodb');
 // const url = 'mongodb://localhost:27017';
@@ -363,10 +364,33 @@
 
 // getData()
 
+// data Featch and use seperate file for database connection
 
+// const dbConnect = require('./mongodb')
+// const {MongoClient} = require('mongodb');
+// const url = 'mongodb://localhost:27017';
+// const client = new MongoClient(url);
 
+// async function dbConnection(){
+//     let result = await client.connect();
+//     db = result.db('e-comm');
+//     return db.collection('product');
+// }
+// method 1
 
+// dbConnect().then((res)=>{
+//    res.find({name:'m31s'}).toArray().then((data)=>{
+//     console.log(data);
+//    })
+// })
 
+//  method 2
+// const main = async () => {
+//     let data = await dbConnection();
+//     data = await data.find().toArray();
+//     console.warn(data);
+// }
+// main();
 
 
 
