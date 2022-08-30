@@ -16,4 +16,13 @@ app.post('/', async (req,res)=>{
     res.send(result)
 })
 
+app.put('/', async (req,res)=>{
+    let data = await dbConnect();
+    let result = await data.updateOne(
+        {name:req.body.name},
+        {$set:req.body}
+    )
+    res.send({result:"update"})
+})
+
 app.listen(5000);
