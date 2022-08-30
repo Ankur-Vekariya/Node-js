@@ -392,7 +392,20 @@
 // }
 // main();
 
+// insert data into database
 
+// const dbConnect = require('./mongodb')
+// dbConnect().then((res)=>{
+//        res.find({name:'m31s'}).toArray().then((data)=>{
+//         console.log(data);
+//        })
+//     })
+// const main = async () => {
+//        let data = await dbConnection();
+//         data = await data.find().toArray();
+//         console.warn(data);
+//         }
 
+// main()
 
 
